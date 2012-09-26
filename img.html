@@ -1,0 +1,45 @@
+<html>
+<head>
+	<script type="text/javascript" src="request.js"></script>
+	<script type="text/javascript">
+		function handleOnChange(dd1) {
+			var idx = dd1.selectIndex;
+			var val = dd1[idx].text;
+			var par = document.forms["frmSelect"];
+			var parelmts = par.elements;
+			var prezsel = parelmts["prez"];
+			var country = val;
+			if(country != "Select Country") {
+				var directory = ""+document.location;
+
+				Http.get({
+					url: "./" + country + ".txt",
+
+
+				})
+			}
+		}
+	</script>
+</head>
+<body>
+
+	<img src="http://placehold.it/350x150">
+	<img src="http://placehold.it/500x500">
+	<form name="frmSelect">	
+		<p>
+			<select name="country" onChange="handleOnChange(this);">
+				<option>Select Country</option>
+				<option>France</option>
+				<option>Germany</option>
+				<option>Spain</option>
+			</select>
+		</p><p>
+
+		<select name="prez">
+			<option>Select head of government</option>
+		</select>
+	</p>	
+	</form>	
+
+</body>
+</html/
