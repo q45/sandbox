@@ -2,8 +2,8 @@
 
   echo $_SERVER['REQUEST_METHOD'];
 ?>
-<html>
-<head>N
+<!DOCTYPE html>
+<head>
 	<title>$_POST</title>
 	<script type="text/javascript">
 		function loadXMLDoc() {
@@ -25,18 +25,32 @@
 			}
 
 			xmlhttp.open("GET", "ajax.php",false);
-				xmlhttp.send();
+			xmlhttp.send();
 		}
 	</script>
 </head>
 <body>
+	<br>
+	Your Name:<input type="text" name="name" required placeholder="Name">
+
+
 <div id="test">
 
 </div>
 <span>What is going on right now</span>
-
+<br>
 <img src="http://placehold.it/350x150">
 	<h2>contact</h2>
+
+    <select autofocus="autofocus" multiple="multiple">
+        <option value="utah">Utah</option>
+        <option value="nevada">nevada</option>
+        <option value="Wasington">Washington</option>
+        <option value="Oregon">Oregon</option>
+        <option value="California">California</option>
+        <option value="Arizona">Arizona</option>
+    </select>
+
 	<form action="test.php" method="post">
 		<ul>
 			<li>
@@ -52,6 +66,14 @@
 	</form>
 
 	<div id="mydiv"><h2>Let Ajax change this information</h2></div>
-	<button type="button" onclick="loadXMLDoc()">Change the div</button>
+	<button type="button"  width= onclick="loadXMLDoc()">Change the div</button>
+
+<table>
+    <tr>
+        <td>Apples</td>
+        <td>Green</td>
+
+    </tr>
+</table>
 </body>
 </html>
