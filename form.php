@@ -12,9 +12,10 @@
 
 <!DOCTYPE html>
 <head>
-    <script type="text/javascript" src="playlist.js"></script>
-    <script type="text/javascript" src="playlist_store.js"></script>
-    <link rel="stylesheet" href="playlist.css" type="text/css">
+    <meta charset="utf-8">
+    <script src="playlist.js"></script>
+    <script src="playlist_store.js"></script>
+    <link rel="stylesheet" href="playlist.css">
     <style type="text/css" media="all">
         label {font-weight: bold; color:#300ACC;}
     </style>
