@@ -1,0 +1,40 @@
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+		#mybutton {
+			color: green;
+			width: 200px;
+			text-align: center;
+		}
+	</style>
+
+	<script type="text/javascript">
+
+	window.onload = function() {
+		var clickCount = 0;
+		document.getElementById("mybutton").onclick = function() {
+			clickCount += 1;
+			alert("click " + clickCount + " times");
+
+			if(clickCount >= 5)
+			{
+				clickCount = 0;
+			}
+		};
+	}
+
+	</script>
+	
+</head>
+<body>
+
+		<div>
+		<button id="mybutton" type="button">Click me to see what happens</button>
+		</div>
+
+</body>
+
+
+</html>

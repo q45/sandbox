@@ -27,9 +27,19 @@
 			xmlhttp.open("GET", "ajax.php",false);
 			xmlhttp.send();
 		}
+
+		function setLabel(txtbox) {
+			document.getElementById('lbl').value = txtbox.value;
+		}
 	</script>
 </head>
 <body>
+
+	<textbox></textbox>
+
+	<label id="lbl" />
+	<textbox oninput="setLabel(this);" />
+	
 	<br>
 	Your Name:<input type="text" name="name" required placeholder="Name">
 
